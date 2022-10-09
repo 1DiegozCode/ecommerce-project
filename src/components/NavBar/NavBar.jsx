@@ -8,10 +8,10 @@ export default function NavBar() {
     <ul className="flex justify-evenly items-center">
       {categories.map((category) => (
         <li>
-          <Link category={category} />
+          <Link category={category} key={category + 'key'} />
         </li>
       ))}
-      <li><CartWidget/ ></li>
+      <li ley={'CartWidgetKey'}><CartWidget/ ></li>
     </ul>
   );
 }
